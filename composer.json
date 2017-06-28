@@ -1,5 +1,5 @@
 {
-    "name": "drupal/shade",
+    "name": "shahinam/shade",
     "description": "A Drupal distribution based on Lightning, with commonly used components.",
     "type": "drupal-profile",
     "license": "MIT",
