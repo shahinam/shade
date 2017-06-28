@@ -1,0 +1,42 @@
+{
+    "name": "drupal/shade",
+    "description": "A Drupal distribution based on Lightning, with commonly used components.",
+    "type": "drupal-profile",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "acquia/lightning": "^2.1",
+        "roave/security-advisories": "dev-master",
+        "drupal/paragraphs": "^1.1"
+    },
+    "extra": {
+        "patches": {
+        },
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ]
+}

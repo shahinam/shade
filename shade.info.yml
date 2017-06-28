@@ -1,0 +1,17 @@
+name: 'shade'
+type: profile
+version: 8.x-dev
+description: 'A Drupal distribution based on Lightning, with commonly used components.'
+core: '8.x'
+dependencies:
+  - features
+  - paragraphs
+
+themes:
+  - bartik
+  - seven
+
+base profile:
+  name: lightning
+  excluded_dependencies:
+    - lightning_search
