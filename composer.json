@@ -4,12 +4,26 @@
     "type": "drupal-profile",
     "license": "MIT",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "acquia/lightning": "^2.1",
+        "oomphinc/composer-installers-extender": "^1.1",
         "roave/security-advisories": "dev-master",
+        "acquia/lightning": "^2.1",
         "drupal/paragraphs": "^1.1"
     },
+    "require-dev": {},
+    "scripts": {
+        "post-install-cmd": [
+            "@composer drupal-scaffold"
+        ],
+        "post-update-cmd": [
+            "@composer drupal-scaffold"
+        ],
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    },
+    "bin": [],
     "extra": {
+        "enable-patching": true,
         "patches": {
         },
         "installer-paths": {
@@ -19,11 +33,20 @@
             "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
             "docroot/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
+            "docroot/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
             "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
             ],
             "docroot/libraries/{$name}": [
                 "type:drupal-library"
