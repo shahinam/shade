@@ -1,8 +1,12 @@
 name: 'Shade'
 type: profile
-version: 8.x-dev
+version: '2.0-dev'
 description: 'A Drupal distribution based on Lightning, with commonly used components.'
 core: '8.x'
+
+distribution:
+  name: Shade
+
 dependencies:
   - features
   - paragraphs
