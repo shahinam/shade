@@ -8,7 +8,7 @@
     "require": {
         "oomphinc/composer-installers-extender": "^1.1",
         "roave/security-advisories": "dev-master",
-        "acquia/lightning": "^2.1",
+        "acquia/lightning": "^2.2",
         "drupal/paragraphs": "^1.1"
     },
     "require-dev": {},
@@ -60,6 +60,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ]
 }
