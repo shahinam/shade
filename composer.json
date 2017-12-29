@@ -12,7 +12,8 @@
         "drupal/redirect": "^1.0",
         "drupal/features": "^3.5",
         "drupal/block_visibility_groups": "^1.1",
-        "drupal/admin_toolbar": "^1.21"
+        "drupal/admin_toolbar": "^1.21",
+        "drupal/shield": "^1.1"
     },
     "require-dev": {},
     "scripts": {
