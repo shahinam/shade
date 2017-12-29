@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "shahinam/shade": "^2.0"
+        "shahinam/shade": "^3.0"
     },
     "require-dev": {},
     "scripts": {

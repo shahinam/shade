@@ -6,9 +6,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "oomphinc/composer-installers-extender": "^1.1",
         "roave/security-advisories": "dev-master",
-        "acquia/lightning": "^2.2"
+        "acquia/lightning": "^3.0"
     },
     "require-dev": {},
     "scripts": {
