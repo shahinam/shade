@@ -8,8 +8,7 @@
     "require": {
         "oomphinc/composer-installers-extender": "^1.1",
         "roave/security-advisories": "dev-master",
-        "acquia/lightning": "^2.2",
-        "drupal/paragraphs": "^1.1"
+        "acquia/lightning": "^2.2"
     },
     "require-dev": {},
     "scripts": {
