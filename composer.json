@@ -7,7 +7,12 @@
     "prefer-stable": true,
     "require": {
         "roave/security-advisories": "dev-master",
-        "acquia/lightning": "^3.0"
+        "acquia/lightning": "^3.0",
+        "drupal/paragraphs": "^1.2",
+        "drupal/redirect": "^1.0",
+        "drupal/features": "^3.5",
+        "drupal/block_visibility_groups": "^1.1",
+        "drupal/admin_toolbar": "^1.21"
     },
     "require-dev": {},
     "scripts": {
