@@ -19,12 +19,15 @@
     "require-dev": {},
     "scripts": {
         "post-install-cmd": [
-            "@composer drupal-scaffold"
+            "@composer drupal-scaffold",
+            "@composer clean-packages"
         ],
         "post-update-cmd": [
-            "@composer drupal-scaffold"
+            "@composer drupal-scaffold",
+            "@composer clean-packages"
         ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "clean-packages": "rm -rf docroot; rm -rf vendor"
     },
     "bin": [],
     "extra": {
