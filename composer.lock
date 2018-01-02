@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ff7501f22c957999becfc8f66b38cc9",
+    "content-hash": "1d00447bed05dfad05f16938329b428a",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -1147,7 +1147,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.21",
-                    "datestamp": "1511283695",
+                    "datestamp": "1514888585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4230,6 +4230,61 @@
             }
         },
         {
+            "name": "drupal/zen",
+            "version": "7.0.0-alpha14",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/zen",
+                "reference": "8.x-7.0-alpha14"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/zen-8.x-7.0-alpha14.zip",
+                "reference": "8.x-7.0-alpha14",
+                "shasum": "5e9c8f3d4a7c1867173f7219db3791c15b755899"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x": "7.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-7.0-alpha14",
+                    "datestamp": "1464881343",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "KrisBulman",
+                    "homepage": "https://www.drupal.org/user/190735"
+                },
+                {
+                    "name": "echoz",
+                    "homepage": "https://www.drupal.org/user/38665"
+                }
+            ],
+            "description": "Zen sub-themes are the ultimate starting themes for Drupal 8. Read the <a href=\"https://drupal.org/node/873778\">online docs</a> or the included README-FIRST.txt on how to create a theme with Zen.",
+            "homepage": "https://www.drupal.org/project/zen",
+            "support": {
+                "source": "http://cgit.drupalcode.org/zen"
+            }
+        },
+        {
             "name": "easyrdf/easyrdf",
             "version": "0.9.1",
             "source": {
@@ -5230,6 +5285,31 @@
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
             "time": "2017-12-24T19:52:27+00:00"
+        },
+        {
+            "name": "shahinam/zenshade",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shahinam/zenshade.git",
+                "reference": "392a1915750f0b594e14cb25cf7d07e387a12fb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shahinam/zenshade/zipball/392a1915750f0b594e14cb25cf7d07e387a12fb6",
+                "reference": "392a1915750f0b594e14cb25cf7d07e387a12fb6",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/zen": "^7.0"
+            },
+            "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A reusable theme based on popular Zen theme.",
+            "time": "2018-01-02T16:00:37+00:00"
         },
         {
             "name": "stack/builder",
@@ -6665,7 +6745,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "roave/security-advisories": 20
+        "roave/security-advisories": 20,
+        "shahinam/zenshade": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

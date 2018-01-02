@@ -13,7 +13,8 @@
         "drupal/features": "^3.5",
         "drupal/block_visibility_groups": "^1.1",
         "drupal/admin_toolbar": "^1.21",
-        "drupal/shield": "^1.1"
+        "drupal/shield": "^1.1",
+        "shahinam/zenshade": "3.x-dev"
     },
     "require-dev": {},
     "scripts": {
