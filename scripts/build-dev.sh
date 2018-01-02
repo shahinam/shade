@@ -35,3 +35,10 @@ composer install
 git_init
 
 echo -e "\n${GREEN}You can find the target build at ${TARGET_DIR_PATH}"
+
+# For local dev, remove the build files.
+
+cd ${APP_BASE}
+rm -rf docroot
+rm -rf vendor
+
