@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "require": {
         "roave/security-advisories": "dev-master",
-        "acquia/lightning": "^3.0",
+        "acquia/lightning": "~3.1.0",
         "drupal/paragraphs": "^1.2",
         "drupal/redirect": "^1.0",
         "drupal/features": "^3.5",
